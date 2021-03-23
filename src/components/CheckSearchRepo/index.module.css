@@ -1,0 +1,37 @@
+.parent {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.search {
+  min-width: 40vw !important;
+  font-size: 2vh !important;
+  height: 4vh !important;
+}
+
+.select {
+  width: 20vw;
+  font-size: 2vh !important;
+}
+
+.header {
+  font-size: 2.5vh;
+}
+
+.btn {
+  font-size: 2vh !important;
+  height: 4vh !important;
+  width: 5vw !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
