@@ -14,6 +14,9 @@ let CheckSearchRepo = () => {
 
   const [childItemForSelect, setChildItemForSelect]: any = useState([]);
 
+  // функция проверяет строку поиска на наличие "github.com", если не -1, то меняет ссылку на "owner/repo", 
+  // добавляет элементы в select. Если -1, то блокирует кнопку поиска, обнуляет выбаранные select"ы и элементы для select"а
+
   const handleChangeSearch = () => {
     if (form.getFieldsValue().search.indexOf("github.com/") != -1) {
       form.setFieldsValue({
@@ -33,6 +36,8 @@ let CheckSearchRepo = () => {
       setChildItemForSelect([]);
     }
   };
+
+  // функция проверяет наличие выбранных зависимостей, если true, то включает кнопку поиска
 
   const handleChangeSelect = () => {
     form.getFieldsValue().select.length > 0
